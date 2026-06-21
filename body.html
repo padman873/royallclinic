@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Body Treatments in Klang | Royall Clinic</title>
+    <meta name="description" content="Visit our Klang clinic for body contouring, slimming programmes, and medical body treatments. Book an appointment with Royall Clinic today.">
+    <link rel="canonical" href="https://royallclinic.com/body.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Minimal local styles — reused from face.html */
+        :root { --primary: #0B1A23; --accent: #c8a16a; --soft: #f7f4ef; --ink: #263238; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: "Inter", sans-serif; color: var(--ink); background: #fff; line-height: 1.7; }
+        a { color: inherit; text-decoration: none; }
+        .navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--primary); padding: 14px 28px; display: flex; align-items: center; justify-content: space-between; }
+        .navbar img { height: 52px; display: block; }
+        .nav-actions { display: flex; gap: 18px; align-items: center; color: #fff; font-size: 11px; letter-spacing: 1.8px; text-transform: uppercase; font-weight: 700; }
+        .hero { min-height: 88vh; padding: 130px 40px 70px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 520px); gap: 54px; align-items: center; background: linear-gradient(90deg, rgba(11,26,35,0.94), rgba(11,26,35,0.72)), url("images/body.avif") center/cover no-repeat; color: #fff; }
+        .hero-content { max-width: 760px; }
+        .eyebrow { display: block; color: var(--accent); font-size: 11px; letter-spacing: 4px; text-transform: uppercase; font-weight: 700; margin-bottom: 18px; }
+        h1, h2, h3 { font-family: "Playfair Display", serif; line-height: 1.12; color: inherit; }
+        h1 { font-size: clamp(40px, 6vw, 76px); max-width: 780px; margin-bottom: 24px; }
+        .lead { max-width: 670px; color: rgba(255,255,255,0.86); font-size: 18px; font-weight: 300; }
+        .booking-panel { background: rgba(255,255,255,0.96); color: var(--primary); border-top: 5px solid var(--accent); padding: 34px; box-shadow: 0 30px 80px rgba(0,0,0,0.22); }
+        .booking-panel h2 { font-size: 30px; margin-bottom: 14px; }
+        .booking-panel p { font-size: 14px; color: #56636a; margin-bottom: 24px; }
+        .button { display: inline-flex; align-items: center; justify-content: center; min-height: 46px; padding: 0 22px; background: var(--accent); color: #fff; border: 0; font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 700; cursor: pointer; }
+        section { padding: 92px 40px; }
+        .container { max-width: 1180px; margin: 0 auto; }
+        .section-head { max-width: 760px; margin-bottom: 38px; }
+        .section-head h2 { color: var(--primary); font-size: clamp(32px, 4vw, 48px); margin-bottom: 16px; }
+        .treatment-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+        .treatment-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 26px;
+            min-height: 320px;
+            padding: 32px 28px;
+            background: linear-gradient(180deg, rgba(255,255,255,0.94), rgba(249,244,239,0.97));
+            box-shadow: 0 30px 90px rgba(0,0,0,0.08);
+            transition: transform 0.35s var(--premium-ease), box-shadow 0.35s var(--premium-ease);
+        }
+
+        .treatment-card:hover { transform: translateY(-8px); box-shadow: 0 38px 110px rgba(0,0,0,0.14); }
+        .treatment-card h3 { color: var(--primary); font-size: 22px; margin-bottom: 14px; }
+        .treatment-card p { color: #647078; font-size: 15px; line-height: 1.7; }
+        .results { background: var(--soft); }
+        .result-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
+        .result-card { background: #fff; border-radius: 4px; overflow: hidden; border: 1px solid #e8e0d5; }
+        .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #e8e0d5; }
+        .image-half { position: relative; aspect-ratio: 4 / 5; background: #ddd; }
+        .image-half img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tag { position: absolute; left: 10px; bottom: 10px; background: rgba(11,26,35,0.88); color: var(--accent); padding: 4px 9px; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; font-weight: 700; }
+        .result-copy { padding: 22px; }
+        .result-copy h3 { color: var(--primary); font-size: 22px; margin-bottom: 8px; }
+        .procedure-box { background: #f9f9f9; padding: 20px; border-left: 3px solid var(--accent); margin-top: 15px; font-size: 14px; color: #333; }
+        .process { background: var(--primary); color: #fff; }
+        .process .section-head h2 { color: #fff; }
+        .process .section-head p { color: #fff; }
+        .steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; }
+        .step { border-left: 2px solid var(--accent); padding-left: 20px; }
+        .step strong { display: block; color: var(--accent); font-size: 12px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; }
+        .step h3 { font-size: 22px; margin-bottom: 8px; color: #fff; }
+        .step p { color: rgba(255,255,255,0.72); font-size: 14px; }
+        footer { background: #041c22; color: rgba(255,255,255,0.68); padding: 36px 40px; text-align: center; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+        @media (max-width: 900px) { .hero { grid-template-columns: 1fr; padding: 108px 22px 54px; } section { padding: 68px 22px; } .treatment-grid, .result-grid { grid-template-columns: 1fr; } }
+    </style>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html#home" aria-label="Royall Clinic home"><img src="images/logo.avif" alt="Royall Clinic"></a>
+        <div class="nav-actions">
+            <a href="index.html#treatments">Treatments</a>
+            <a href="index.html#contact">Find Us</a>
+        </div>
+    </nav>
+
+    <main>
+        <header class="hero">
+            <div class="hero-content">
+                <span class="eyebrow">Body Sculpting</span>
+                <h1>Body Treatments</h1>
+                <p class="lead">Doctor-supervised body contouring and medical solutions for targeted areas.</p>
+            </div>
+            <aside class="booking-panel">
+                <h2>Begin With A Consultation</h2>
+                <p>Assessment and practical recommendations to help you decide the right body programme.</p>
+                <a class="button" href="https://wa.me/60178788774?text=Hi%20Royall%20Clinic%2C%20I%27d%20like%20to%20ask%20about%20Body%20Treatments." target="_blank" rel="noopener">WhatsApp Clinic</a>
+            </aside>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Treatment Focus</span>
+                    <h2>Body concerns we manage</h2>
+                    <p>Non-surgical and minimally invasive programmes for fat reduction, skin tightening, and body shaping.</p>
+                </div>
+                <div class="treatment-grid">
+                    <article class="treatment-card">
+                        <h3>Slimming & Contouring</h3>
+                        <p>Targeted non-invasive programmes to reduce localized fat and improve silhouette.</p>
+                    </article>
+                    <article class="treatment-card">
+                        <h3>Skin Tightening</h3>
+                        <p>Treatments to address laxity and restore smoother, firmer skin texture.</p>
+                    </article>
+                    <article class="treatment-card">
+                        <h3>Cellulite & Texture</h3>
+                        <p>Combination approaches to reduce appearance of cellulite and improve skin quality.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="results">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Before & After</span>
+                    <h2>Example outcomes</h2>
+                    <p>These image sets represent typical visual improvements patients discuss during consultation. Individual results vary.</p>
+                </div>
+                <div class="result-grid">
+                    <article class="result-card">
+                        <div class="before-after">
+                            <div class="image-half"><img src="images/b1_before.avif" alt="Slimming program before"><span class="tag">Before</span></div>
+                            <div class="image-half"><img src="images/b1_after.avif" alt="Slimming program after"><span class="tag">After</span></div>
+                        </div>
+                        <div class="result-copy"><h3>1. Slimming Program</h3><p>Non-invasive contouring.</p><div class="procedure-box"><strong>Tech:</strong> EMS Muscle Stimulation.</div></div>
+                    </article>
+
+                    <article class="result-card">
+                        <div class="before-after">
+                            <div class="image-half"><img src="images/b2_before.avif" alt="Fat reduction before"><span class="tag">Before</span></div>
+                            <div class="image-half"><img src="images/b2_after.avif" alt="Fat reduction after"><span class="tag">After</span></div>
+                        </div>
+                        <div class="result-copy"><h3>2. Fat Reduction</h3><p>Permanent fat elimination.</p><div class="procedure-box"><strong>Tech:</strong> Cryolipolysis / Fat Freezing.</div></div>
+                    </article>
+
+                    <article class="result-card">
+                        <div class="before-after">
+                            <div class="image-half"><img src="images/b3_before.avif" alt="Saggy skin before"><span class="tag">Before</span></div>
+                            <div class="image-half"><img src="images/b3_after.avif" alt="Saggy skin after"><span class="tag">After</span></div>
+                        </div>
+                        <div class="result-copy"><h3>3. Saggy Skin Reduction</h3><p>Tighten loose skin.</p><div class="procedure-box"><strong>Solution:</strong> Radio Frequency.</div></div>
+                    </article>
+
+                    <article class="result-card">
+                        <div class="before-after">
+                            <div class="image-half"><img src="images/b4_before.avif" alt="Hand rejuvenation before"><span class="tag">Before</span></div>
+                            <div class="image-half"><img src="images/b4_after.avif" alt="Hand rejuvenation after"><span class="tag">After</span></div>
+                        </div>
+                        <div class="result-copy"><h3>4. Hand Rejuvenation</h3><p>Reverse signs of aging on hands.</p><div class="procedure-box"><strong>Solution:</strong> Dermal Volumizers.</div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="process">
+            <div class="container">
+                <div class="section-head">
+                    <span class="eyebrow">Clinic Pathway</span>
+                    <h2>Your body treatment journey</h2>
+                    <p>From assessment and planning to treatment and recovery, Royall Clinic supports your body goals with structured care.</p>
+                </div>
+                <div class="steps">
+                    <div class="step"><strong>01</strong><h3>Assess</h3><p>Doctor reviews your body concerns, treatment suitability, and outcome expectations.</p></div>
+                    <div class="step"><strong>02</strong><h3>Plan</h3><p>Select the most effective combination of contouring, tightening, and skin-smoothing treatments.</p></div>
+                    <div class="step"><strong>03</strong><h3>Treat</h3><p>Receive your chosen body procedure with medical precision and comfort.</p></div>
+                    <div class="step"><strong>04</strong><h3>Recover</h3><p>Follow aftercare instructions and review sessions to maintain your results.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Ready to discuss your body treatment?</h2>
+                <p>Message Royall Clinic to arrange a consultation and receive guidance based on your body goals.</p>
+                <a class="button" href="https://wa.me/60178788774?text=Hi%20Royall%20Clinic%2C%20I%27d%20like%20to%20book%20a%20Body%20Treatments%20consultation." target="_blank" rel="noopener">Book On WhatsApp</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Royall Clinic 2026 | Klang, Selangor | Be Loyal To The Royall Within
+    </footer>
+</body>
+</html>
